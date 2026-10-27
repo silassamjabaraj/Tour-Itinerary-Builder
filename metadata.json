@@ -1,0 +1,6 @@
+{
+  "name": "Tour Itinerary Builder",
+  "description": "Professional Tour Itinerary Builder for travel agencies, tour operators, and destination managers with day-by-day schedule canvas, pricing & margin calculation engine, reusable master catalogs, workflow approvals, and branded PDF/DOCX document generation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

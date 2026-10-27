@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@media print {
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Hide all app chrome, overlays, headers, and navigation */
+  body > * {
+    display: none !important;
+  }
+
+  /* Show only the active print canvas portal or wrapper if attached, or unhide modal content */
+  body.printing-canvas #export-document-canvas {
+    display: block !important;
+    visibility: visible !important;
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: #ffffff !important;
+  }
+
+  /* Make sure background colors and borders print sharply */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  @page {
+    size: auto;
+    margin: 12mm 15mm;
+  }
+}
